@@ -1,0 +1,22 @@
+# 运行时数据
+kb_agent/data/
+kb_agent/uploads/
+kb_agent_web/.shots/
+kb_agent_web/tools/dbg.mjs
+
+# 依赖与构建缓存
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+kb_agent_web/node_modules/
+kb_agent_web/dist/
+
+# 本地配置（含密钥）
+.env
+!*.env.example
+
+# 编辑器
+.idea/
+.vscode/
+.DS_Store

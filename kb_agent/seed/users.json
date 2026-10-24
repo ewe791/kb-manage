@@ -1,0 +1,72 @@
+{
+  "departments": [
+    { "name": "财务部", "sort_order": 1 },
+    { "name": "市场部", "sort_order": 2 },
+    { "name": "人力资源部", "sort_order": 3 },
+    { "name": "技术部", "sort_order": 4 }
+  ],
+  "roles": [
+    {
+      "role_name": "超级管理员",
+      "role_code": "super_admin",
+      "description": "拥有全部权限",
+      "permissions": [
+        "knowledge:create", "knowledge:read", "knowledge:update", "knowledge:delete",
+        "knowledge:import", "knowledge:permission", "ai:access",
+        "dashboard:read", "settlement:review", "org:manage"
+      ]
+    },
+    {
+      "role_name": "财务专员",
+      "role_code": "finance_specialist",
+      "description": "可查看财务制度并参与 FAQ 审核",
+      "permissions": ["knowledge:read", "ai:access", "dashboard:read", "settlement:review"]
+    },
+    {
+      "role_name": "普通员工",
+      "role_code": "employee",
+      "description": "可进行知识问答",
+      "permissions": ["knowledge:read", "ai:access"]
+    },
+    {
+      "role_name": "知识管理员",
+      "role_code": "knowledge_admin",
+      "description": "负责知识导入与权限配置",
+      "permissions": [
+        "knowledge:create", "knowledge:read", "knowledge:update", "knowledge:delete",
+        "knowledge:import", "knowledge:permission", "ai:access",
+        "dashboard:read", "settlement:review"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "Admin@123",
+      "display_name": "系统管理员",
+      "department": "技术部",
+      "roles": ["super_admin"]
+    },
+    {
+      "username": "zhangsan",
+      "password": "Zs@123456",
+      "display_name": "张三",
+      "department": "财务部",
+      "roles": ["finance_specialist"]
+    },
+    {
+      "username": "lisi",
+      "password": "Ls@123456",
+      "display_name": "李四",
+      "department": "市场部",
+      "roles": ["employee"]
+    },
+    {
+      "username": "wangwu",
+      "password": "Ww@123456",
+      "display_name": "王五",
+      "department": "人力资源部",
+      "roles": ["employee"]
+    }
+  ]
+}
