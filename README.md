@@ -1,6 +1,6 @@
 # 知识库 Agent（双角色）· 开发交付说明
 
-按《项目二_知识库Agent》文档 + 《2.9 知识库管理平台》完整需求实现的工程：FastAPI + SQLAlchemy 2.0 + Alembic 后端，
+按《知识库Agent》文档 + 《知识库管理平台》完整需求实现的工程：FastAPI + SQLAlchemy 2.0 + Alembic 后端，
 Vue3 + Vite + TS + Element Plus + Pinia 前端，手写 Function Calling 管理员 Agent，
 固定编排的用户问答 Agent，四维权限引擎全部硬编码在服务端。
 
@@ -49,7 +49,7 @@ Vue3 + Vite + TS + Element Plus + Pinia 前端，手写 Function Calling 管理�
 
 ## 二、快速启动
 
-### 1. 后端（已安装依赖到 `项目二/.venv`）
+### 1. 后端（已安装依赖到 `/.venv`）
 
 ```bash
 cd 项目二/kb_agent
@@ -90,7 +90,7 @@ npm run build      # 产物 dist/，后端会自动接管
 ## 三、验收脚本（两条演示链路+全接口）
 
 ```bash
-cd 项目二/kb_agent
+cd /kb_agent
 ../.venv/Scripts/python.exe tools/smoke_test.py
 ```
 
